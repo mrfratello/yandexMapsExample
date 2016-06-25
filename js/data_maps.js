@@ -30,7 +30,7 @@ var YaMapsHandler = {
 
     requestCarData: function() {
         var ajax = getXmlHttp();
-        ajax.open('GET', 'js/data.json', true);
+        ajax.open('GET', 'mock/data.json', true);
         ajax.onreadystatechange = function() {
             if (ajax.readyState == 4) {
                 if(ajax.status == 200) {
